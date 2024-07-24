@@ -14,6 +14,7 @@
 #include <array>
 #include <string>
 #include <syslog.h>
+#include <memory>
 
 namespace spdlog {
 namespace sinks {

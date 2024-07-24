@@ -15,6 +15,8 @@
 #include "spdlog/sinks/ansicolor_sink.h"
 #endif
 
+#include <memory>
+
 namespace spdlog {
 namespace sinks {
 #ifdef _WIN32

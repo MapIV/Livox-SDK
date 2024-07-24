@@ -32,6 +32,7 @@
 #else
 #include <unistd.h>
 #endif // WIN32
+#include <memory>
 
 
 using std::lock_guard;

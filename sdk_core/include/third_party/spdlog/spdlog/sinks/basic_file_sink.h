@@ -15,6 +15,7 @@
 
 #include <mutex>
 #include <string>
+#include <memory>
 
 namespace spdlog {
 namespace sinks {

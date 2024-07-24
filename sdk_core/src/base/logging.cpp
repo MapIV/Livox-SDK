@@ -23,6 +23,7 @@
 //
 
 #include "logging.h"
+#include <memory>
 
 std::shared_ptr<spdlog::logger> logger = NULL;
 bool is_save_log_file = false;

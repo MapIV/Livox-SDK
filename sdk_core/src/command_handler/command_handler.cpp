@@ -29,6 +29,7 @@
 #include "device_manager.h"
 #include "hub_command_handler.h"
 #include "lidar_command_handler.h"
+#include <memory>
 
 using std::lock_guard;
 using std::mutex;

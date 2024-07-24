@@ -13,6 +13,7 @@
 #include "spdlog/sinks/base_sink.h"
 
 #include <mutex>
+#include <memory>
 
 namespace spdlog {
 namespace sinks {

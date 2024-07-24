@@ -19,6 +19,7 @@
 #include <mutex>
 #include <string>
 #include <thread>
+#include <memory>
 
 #if !defined(SPDLOG_ANDROID_RETRIES)
 #define SPDLOG_ANDROID_RETRIES 2

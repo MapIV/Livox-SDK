@@ -23,6 +23,7 @@
 //
 
 #include "lidar_command_handler.h"
+#include <memory>
 
 using std::list;
 

@@ -31,6 +31,7 @@
 #include "device_manager.h"
 #include "livox_def.h"
 #include <stdio.h>
+#include <memory>
 
 using std::bind;
 using std::list;
@@ -138,7 +139,7 @@ void CommandChannel::OnTimer(TimePoint now) {
   }
 
   for (list<Command>::iterator ite = timeout_commands.begin(); ite != timeout_commands.end(); ++ite) {
-    LOG_WARN("Command Timeout: Set {}, Id {}, Seq {}", 
+    LOG_WARN("Command Timeout: Set {}, Id {}, Seq {}",
         (uint16_t)ite->packet.cmd_set, ite->packet.cmd_code, ite->packet.seq_num);
     if (callback_) {
       ite->packet.packet_type = kCommandTypeAck;
